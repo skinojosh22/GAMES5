@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <style>
+    .button-3{
+      background-color: yellow;
+       }
+       .button-4{
+         background-color: white;
+       }
+       .button-5{
+         background-color: gray;
+       }
+  </style>
+</head>
+<body>
+  <!--Experiment starts-->
+  <button onclick="alert('Welcome to my tutorial')">For my experience</button>
+  <button onclick="
+  alert(`Items(${1+1}): $${(3867+2567)/100} ${'\nThank you for your time'}`);
+  ">Calculation1</button>
+  <button onclick="
+  alert('Items('+(1+1)+'): $'+(3867+2456)/100+'\nThanks for your time'); 
+  ">Calculation2</button><br><br>
+  
+  <button onclick="
+  console.log(`Cart Quantity: ${cartQuantity}`);
+  ">Show cart quantity</button>
+  
+  <button onclick="
+   console.log(`Cart Quantity: ${cartQuantity +=1}`);
+  ">Add to cart</button>
+  
+  <button onclick="
+  console.log(`Cart Quantity: ${cartQuantity +=2}`);
+  ">+2</button>
+  
+  <button onclick="
+  console.log(`Cart Quantity: ${cartQuantity +=4}`);
+  ">+4</button>
+  <button onclick="
+  cartQuantity = 0;
+  console.log('cart was reset.');
+  console.log(`Cart Quantity: ${cartQuantity}`);
+  ">Reset cart</button>
+  
+  <button onclick="
+  calculation = eval(cartQuantity);
+  console.log(calculation);
+  "> Resetting values</button><br><br><br><br>
+  <!--Experiment ends-->
+  
+  <!--Rock Paper Scissors start-->
+  <button class="button-3" onclick="
+playGame('rock')
+  ">Rock</button>
+  
+  <button class="button-4" onclick="
+  playGame('paper')
+  ">Paper</button>
+  
+  <button class="button-5" onclick="
+  playGame('scissors')
+  ">Scissors</button>
+  <button onclick="
+  score.wins = 0;
+  score.losses = 0;
+  score.ties = 0;
+  localStorage.removeItem('stores');
+  alert(`Game has reset.
+  Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}.`);
+  ">Reset game</button>
+  <button onclick="
+  alert(`Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}.`);
+  ">Show score</button><br><br>
+  <!--Rock Paper Scissors ends-->
+  
+  <!--Hour checking-->
+  <button onclick="
+  hourChecking();
+  ">Hour Checking</button>
+  <!--Hour checking ends -->
+  
+  <script src="/Js/Java practice.js"></script>
+</body>
+</html>
